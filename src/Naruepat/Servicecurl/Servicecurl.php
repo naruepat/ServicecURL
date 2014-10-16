@@ -4,7 +4,7 @@ class Servicecurl {
 
 	public function checkpoint()
 	{
-		return 'checkpoint';
+		return 'checkpoint test';
 	}
 }
 
