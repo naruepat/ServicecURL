@@ -1,0 +1,23 @@
+{
+    "name": "naruepat/servicecurl",
+    "description": "",
+    "authors": [
+        {
+            "name": "naruepat",
+            "email": "naruepat.p@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Naruepat\\Servicecurl\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
