@@ -112,9 +112,28 @@ class Request
 	 */
 	public function setUrl($url)
 	{
+		if($this->validateURL($url) == false){
+			if($this->curl->getDomain()!=''){
+				$url = $this->curl->getDomain().'/'.$url;
+			}
+		}
+
 		$this->url = $url;
 
 		return $this;
+	}
+
+	/**
+	 * Valudate URL
+	 * @param  string $url URL example www.example.com
+	 * @return boolean     true/false
+	 */
+	public function validateURL($url){
+		if (preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $url)) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	/**
