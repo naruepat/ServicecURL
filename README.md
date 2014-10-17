@@ -28,6 +28,28 @@ The class is bound to the ioC as `ServicecURL`
 $post = ServicecURL::post('www.example.com');
 ```
 
+## Configuration
+
+First, from the command line again, run 
+
+```php
+php artisan config:publish naruepat/servicecurl
+```
+to publish the default configuration file.
+
+
+Configuration was designed to be as flexible as possible.
+
+By default, global configuration can be set in the `app/config/packages/naruepat/servicecurl/config.php` file.  If a configuration isn't set, then the package defaults from `vendor/naruepat/servicecurl/src/config/config.php` are used.  Here is an example configuration, with all the default settings shown:
+
+```php
+return array(
+	'domain' => 'http://www.example.com/',
+	'client_id' => '',
+	'client_secret' => ''
+);
+```
+
 ##Usage
 ```php
 <?php
