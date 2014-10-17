@@ -80,7 +80,9 @@ $response = ServicecURL::jsonPut($url, ['post' => 'data']);
 $response = ServicecURL::rawPost($url, '<?xml version...');
 
 // a response object is returned
-var_dump($response->code); // response status code (for example, '200 OK')
+echo $response->code; // response status code (for example, '200 OK')
+echo $response->statusCode; // response status code (for example, 200)
+echo $response->statusText; // response status text (for example, '200 OK')
 echo $response->body;
 var_dump($response->headers); // array of headers
 var_dump($response->info); // array of curl info
