@@ -9,6 +9,8 @@ Require this package in your `composer.json` and update composer. This will down
 ```php
 "naruepat/servicecurl": "dev-master"
 ```
+or See https://packagist.org/packages/naruepat/servicecurl
+
 
 After updating composer, add the ServiceProvider to the providers array in `app/config/app.php`
 
