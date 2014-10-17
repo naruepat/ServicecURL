@@ -30,7 +30,7 @@ class ServicecurlServiceProvider extends ServiceProvider {
 	{
 		$this->app['servicecurl'] = $this->app->share(function($app)
 		{
-			return new Servicecurl($app['view'], $app['config']);
+			return new Servicecurl($app['config']);
 		});
 	}
 
