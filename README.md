@@ -27,7 +27,13 @@ You can use the facade for shorter code. Add this to your aliases:
 The class is bound to the ioC as `ServicecURL`
 
 ```php
-$post = ServicecURL::post('www.example.com');
+$post = ServicecURL::post('www.example.com/list');
+```
+
+or if config domain you can use path
+
+```php
+$post = ServicecURL::post('list');
 ```
 
 ## Configuration
