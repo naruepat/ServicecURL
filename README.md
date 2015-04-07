@@ -40,8 +40,15 @@ $post = ServicecURL::post('list');
 
 First, from the command line again, run 
 
+For Laravel 4
 ```php
 php artisan config:publish naruepat/servicecurl
+```
+
+
+For Laravel 5
+```php
+php artisan view:publish
 ```
 to publish the default configuration file.
 
